@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,yBAAyB;EACrB,OAAQ;IACJ,OAAO,EAAE,mBAAmB",
+"sources": ["_minw576.scss],
+"names": [],
+"file": "style.scss"
+}

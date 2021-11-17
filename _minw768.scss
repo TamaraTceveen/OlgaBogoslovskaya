@@ -1,0 +1,436 @@
+@media (min-width: 768px){
+    .center {
+        padding: 0 calc(50% - 360px);
+    }
+    .header {
+        height: 100vh;
+        background-position: 81% center;
+        &__nav {
+            display: flex;
+            justify-content: space-between;
+        }
+        &__text {
+            margin-top: 5vh;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            font-size: 32px;
+            line-height: 40px;
+            
+            &__name{
+                font-weight: 600;
+                font-size: 48px;
+                line-height: 56px;
+            }
+        }
+        &__btn {
+            width: 500px;
+            height: 60px;
+            font-size: 24px;
+            line-height: 60px;
+        }
+    }
+
+ 
+    .standart_text {
+        font-size: 32px;
+        line-height: 40px;
+        margin-top: 24px;
+        margin-bottom: 32px;
+    }
+
+    .mobil_text {
+        color: #FAF6F6;
+        display: flex;
+        height: 47px;
+        font-weight: 700;
+        align-items: center;
+        font-size: 25px;
+    }
+
+    .logo {
+        padding-top: 35px;
+        padding-left: 46px;
+    }
+
+    .menu {
+        height: 121px;
+        background-image: url(img/testbgr.png);
+        background-position-y: bottom;
+        &__btn {
+            width: 90%;
+            max-width: 225px;
+            height: 47px;
+            background: transparent;
+            border-radius: 10px;
+        }
+        &__list {
+            font-weight: bold;
+            font-size: 32px;
+            line-height: 40px;
+            margin-top: 113px;
+        }
+       
+        &_sidenav_btn {
+            margin-top: 35px;
+            width: 222px;
+            height: 50px;
+            margin-right: 50px;
+            
+        }
+        &__mobil__mail {
+            display: flex;
+            font-size: 32px;
+            line-height: 40px;
+            align-items: center;
+        }
+        
+    }
+
+    #imgMail {
+        display: inline-block;
+        padding-right: 15px;
+    }
+
+    #openNav {
+        font-size: 42px;
+        margin-right: 46px;
+        margin-top: 14px;
+        padding: 10px; 
+    }
+
+    .sidenav .closebtn {
+        font-size: 50px;
+    }
+
+    .about {
+        min-height: 70vh;
+        &__h1 {
+            width: 554px;
+            font-weight: 600;
+            font-size: 48px;
+            line-height: 56px;
+        }
+        &__text {
+            font-size: 20px;
+            line-height: 24px;
+            width: 100%;
+        }
+        &__bgr__big {
+            position: relative;
+            &__text {
+                width: 688px;
+            }
+        }
+        &__bgr {
+            position: relative;
+            &__img {
+                position: absolute;
+                top: -264px;
+                right: -204px;
+                width: 306px;
+                height: 306px;
+            }
+            &__text {
+                margin-top: 24px;
+                width: 649px;
+                flex-direction: row;
+                position: relative;
+                & p {
+                    width: 423px;
+                }
+            }
+        }
+        &__endtext {
+            margin-top: 24px;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 32px;
+            width: 357px;
+        }
+    }
+
+    .important {
+        min-height: 56vh;
+        
+        padding-top: 66px;
+        padding-bottom: 66px;
+        font-size: 24px;
+        line-height: 32px;
+        &__ul {
+            gap: 80px;
+            &_after::after {
+                content: url(img/wave_line_tablet.png);
+                bottom: -51px;
+                left: 17%;
+            }
+        }
+    }
+
+    .help {
+        min-height: 58vh;
+        font-size: 24px;
+        line-height: 32px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        // margin-top: 48px;
+        &__h2 {
+            width: 527px;
+            font-size: 48px;
+            line-height: 56px;
+        }
+        &__list {
+            max-height: 100%;
+            flex-wrap: wrap;
+            flex-direction: row;
+            & li {
+                width: 316px;
+                padding-left: 20px;
+                &::after{
+                    left: -22px;
+                    content: url(img/check_box_tablet.png);
+                }
+            }
+        }
+    }
+
+    .work {
+        min-height: 70vh;
+        font-size: 20px;
+        line-height: 24px;
+        background-position: 52% center;
+        &__h2 {
+            font-size: 48px;
+            line-height: 56px;
+            width: 336px;
+            padding-bottom: 24px;
+            padding-top: 48px;
+        }
+        &__ol {
+            gap: 24px;
+            padding-left: 60px;
+            padding-bottom: 30px;
+            & li::before {
+                width: 32px;
+                height: 32px;
+            }
+        }
+    }
+
+    .price {
+        min-height: 60vh;
+        margin-top: 0;
+        &__h2 {
+            font-size: 48px;
+            line-height: 56px;
+            padding-top: 30px;
+            padding-bottom: 24px;
+        }
+        &__top__title {
+            font-size: 32px;
+            line-height: 40px;
+        }
+        &__title {
+            font-size: 24px;
+            line-height: 32px;
+        }
+        &__content {
+            font-size: 20px;
+            line-height: 24px;
+            width: 334px;
+            height: 584px;
+            &__conteiner {
+                margin-bottom: 8px;
+            }
+        }
+    }
+
+    .review {
+        min-height: 66vh;
+        &__h2 {
+            font-size: 48px;
+            line-height: 56px;
+            padding-top: 70px;
+        }
+        &__swiper > div {
+            width: 100% !important;
+        }
+        &__content {
+            padding-top: 40px;
+            font-size: 20px;
+            line-height: 24px;
+            text-align: left;
+            padding-left: 150px;
+            padding-right: 80px;
+            width: 523px;
+            
+            &::before{
+                position: absolute;
+                content: url(img/quotes_midi.png);
+                display: block;
+                background-size: auto;
+                width: 47px;
+                height: 42px;
+                left: 0;
+                top: 3px;
+            }
+            &__name {
+                font-size: 24px;
+                line-height: 28px;
+                margin-top: 16px;
+                padding-bottom: 32px;
+            }
+        }
+    }
+
+
+    .swiper {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 15px !important;
+      }
+
+    .swiper-slide {
+        width: 46vw !important;
+        height: 100%;
+        margin-right: 0 !important;
+        
+    }
+
+    .education {
+        min-height: 62vh;
+        &__h2 {
+            font-size: 48px;
+            line-height: 56px;
+            padding-bottom: 24px;
+            padding-top: 48px;
+        }
+        &__content {
+            width: 334px;
+            height: 478px;
+        }
+    }
+
+    .form {
+        background-position: 29% center;
+        &__h2 {
+            padding-top: 48px;
+            padding-bottom: 24px;
+            font-weight: bold;
+            font-size: 32px;
+            line-height: 40px;
+            width: 663px;
+        }
+        &__form {
+            width: 635px;
+        }
+        &__control {
+            background: url(img/border_gradient_midi.png);
+            padding-left: 16px;
+            font-size: 24px;
+            line-height: 32px;
+            width: 635px;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        &__btn {
+            width: 635px;
+            font-size: 24px;
+        }
+        &__checkbox {
+            font-size: 24px;
+            line-height: 32px;
+            &__text {
+                width: 606px;
+            }
+        }
+    }
+
+    .footer {
+        &__name {
+        font-size: 32px;
+        line-height: 40px;
+        }
+        &__p {
+            font-size: 20px;
+            line-height: 24px;
+        }
+        &__mail {
+            font-size: 24px;
+            line-height: 22px;
+            display: flex;
+            gap: 15px;
+            &__img {
+                width: 27px;
+                height: 22px;
+            }
+        }
+        &__socialmedia {
+            display: flex;
+            gap: 35px;
+            justify-content: center;
+        }
+        &__up {
+            right: -60px;
+        }
+        &__personaldata {
+            font-size: 20px;
+            line-height: 24px;
+        }
+    }
+
+    #form__thanks {
+        
+        width: 90vw;
+        font-size: 32px;
+        line-height: 40px;
+        gap: 40px;
+    }
+
+    .form__thanks_p {
+        width: 282px;
+    }
+
+    #application_id {
+        width: 472px;
+        height: 510px;
+    }
+
+    .footer {
+        &__name {
+
+        }
+    }
+
+    .show_desctop {
+        display: none;
+    }
+
+    .show_tablet {
+        display: inline-block;
+    }
+
+    .hide_mobil {
+        display: none !important;
+    }
+
+    .hide_nomobil {
+        display: block;
+    }
+
+    .hide_tablet {
+        display: none !important;
+    }
+
+    .hide_onlyonmobil {
+        display: block !important;
+    }
+
+    .hide_desctop {
+        display: block;
+    }
+}

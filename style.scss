@@ -1,0 +1,174 @@
+@import "vars.scss";
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+   
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+body {
+    font-family: 'Nunito', sans-serif;
+    letter-spacing: 0.015em;
+   
+}
+
+.extremal-scrolled .fixed-el2.active {
+    transform: translateY(110%);
+}
+
+ul {
+    list-style-type: none;
+}
+
+.center {
+    padding: 0 21px;
+    margin: 0 auto;
+}
+
+.header {
+    position: relative;
+    background-image: url(img/header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% center;
+    color: $white;
+    &__logo {
+        min-height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+.menu {
+    
+    display: flex;
+    justify-content: space-around;
+    &__btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+}
+
+.dropdown {
+    height: 30px;
+}
+
+.hide__application {
+  display: none;
+}
+
+.application {
+    background-color: $darkBlue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__complete {
+      text-align: center;
+    }
+}
+
+#application_id {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.instagram {
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+}
+
+// .swiper-container {
+//   width: 100%;
+//   height: 450px;
+//   background: #000;
+// }
+
+.parallax-bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 300%;
+    height: 100%;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
+}
+
+.swiper-button-prev {
+    background-image: url(img/chevron_left.png) !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 32px !important;
+    height: 32px !important;
+    &::after {
+        display: none;
+    }
+}
+
+.swiper-button-next {
+    background-image: url(img/chevron_right.png) !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 32px !important;
+    height: 32px !important;
+    &::after {
+        display: none;
+    }
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+// .swiper-slide .subtitle {
+//     font-size: 21px;
+// }
+
+// .swiper-slide .text {
+//     font-size: 20px;
+//     max-width: 400px;
+//     line-height: 1.3;
+// }
+
+.gradient_text {
+    background: -webkit-linear-gradient(left, $lightBlue, $darkBlue);
+    font-weight: bold !important;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: $black !important;
+}
+
+.show {
+    display: flex !important;
+}
+
+.hide {
+    display: none;
+}
+
+input[type="checkbox"] {
+    appearance: none;
+    background-color: white;
+    margin: 0;
+}
+
+
+
+@import "minw375.scss";
+@import "minw768.scss";
+@import "minw1200.scss";
