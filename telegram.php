@@ -13,7 +13,8 @@ $email = $_POST['user_email'];
 
 $token = "2002947867:AAEaovKD_1FRGLn6LvffSw1uqGa-RxwNcIA";
 $chat_id = "-723495742";
-$to      = 'olya.bogoslovskaya@gmail.com';
+// $to      = 'olya.bogoslovskaya@gmail.com';
+$to = 'va.shcherbatykh@gmail.com';
 $d = new DateTime('now');
 $d->setTimezone(new DateTimeZone('Europe/Moscow'));
 
