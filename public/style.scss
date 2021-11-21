@@ -8,7 +8,7 @@
 a {
     text-decoration: none;
     color: inherit;
-   
+    cursor: pointer;
 }
 
 html {
@@ -97,16 +97,16 @@ ul {
 //   background: #000;
 // }
 
-.parallax-bg {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 300%;
-    height: 100%;
-    -webkit-background-size: cover;
-    background-size: cover;
-    background-position: center;
-}
+// .parallax-bg {
+//     position: absolute;
+//     left: 0;
+//     top: 0;
+//     width: 300%;
+//     height: 100%;
+//     -webkit-background-size: cover;
+//     background-size: cover;
+//     background-position: center;
+// }
 
 .swiper-button-prev {
     background-image: url(img/chevron_left.png) !important;
@@ -146,6 +146,8 @@ textarea:focus, input:focus{
 
 .gradient_text {
     background: -webkit-linear-gradient(left, $lightBlue, $darkBlue);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
     font-weight: bold !important;
 }
 
@@ -168,7 +170,7 @@ input[type="checkbox"] {
 }
 
 
-
+@import "minw20em.scss";
 @import "minw375.scss";
 @import "minw768.scss";
 @import "minw1200.scss";

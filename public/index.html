@@ -33,7 +33,7 @@
                     <li class="menu__desctop__hover"><a href="#me">Обо мне</a></li>
                     <li class="menu__desctop__hover"><a href="#price">Услуги и цены</a></li>
                     <li class="menu__desctop__hover"><a href="#review">Отзывы</a></li>
-                    <li class="menu__desctop__hover"><a href="index.html"><a href="#contact">Контакты</a></li>
+                    <li class="menu__desctop__hover"><a href="#contact">Контакты</a></li>
                     <li class="menu__desctop__phone">+ 7 977 783 96 71</li>
                     <li class="hide_mobil show_desctop">
                         <a href="#apply" class="menu_sidenav_btn menu__desctop__button">
@@ -53,7 +53,7 @@
                 </button>
                 <div id="mySidenav" class="sidenav">
                     <ul id="myDropdown" class="menu__list">
-                        <p id="closeNav" class="closebtn">&times;</p>
+                        <li id="closeNav" class="closebtn">&times;</li>
 
                         <li><a href="#me" id="meLink">Обо мне</a></li>
                         <li><a href="#price">Услуги и цены</a></li>
@@ -268,8 +268,8 @@
             </div>
 
             <div class="swiper-pagination swiper-pagination-white hide_mobil"></div>
-            <div class="swiper-button-next hide_mobil"></div>
-            <div class="swiper-button-prev hide_mobil"></div>
+            <div class="swiper-button-next hide_mobil hide_minimobil"></div>
+            <div class="swiper-button-prev hide_mobil hide_minimobil"></div>
         </div>
     </section>
     <section class="education center">
@@ -277,7 +277,7 @@
         <div class="swiper mySwiperEducation">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <div>
+                    <div class="education__container">
                         <img class="education__content" src="img/diplom1.png" alt="дипломированный_психолог">
                     </div>
                 </div>
@@ -339,8 +339,8 @@
                 </div>
             </div>
             <div class="swiper-pagination swiper-pagination-white"></div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next swiper_right"></div>
+            <div class="swiper-button-prev swiper_left"></div>
         </div>
     </section>
     <section class="form center">
@@ -378,7 +378,7 @@
                 <p class="footer__p">Консультация психолога</p>
             </div>
             <div>
-                <p class="footer__mail"><img src="img/mail_icon.png" alt="bogoslovskaya_mail" class="footer__mail__img">
+                <p class="footer__mail"><img src="img/mail_icon.png" alt="bogoslovskaya_mail" class="hide_minimobil footer__mail__img">
                     olya.bogoslovskaya@gmail.com</p>
                 <div class="footer__socialmedia">
                     <a href="https://www.instagram.com/olga_bogoslovskaya__/" target="_blank">
@@ -390,11 +390,11 @@
                 </div>
             </div>
             <a href="#top" class="footer__up">
-                <img class="footer__up" src="img/chevron_up.png">
+                <img class="footer__up" src="img/chevron_up.png" alt="up">
             </a>
-            <p class="footer__personaldata">
+            <a class="footer__personaldata" href="tech/privacy.html">
                 Политика обработки персональных данных
-            </p>
+            </a>
         </footer>
 
     </section>

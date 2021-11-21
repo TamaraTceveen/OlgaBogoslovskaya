@@ -174,7 +174,6 @@ const breakpointChecker = function () {
     }
 
     if (breakpointMobil.matches === false) {
-        console.log('check');
         if (swiperEducation !== undefined) swiperEducation.destroy(true, true);
 
         return;
@@ -213,11 +212,9 @@ function emailTest(input) {
 function phoneTest(input) {
     
     input.value = input.value.replace(/[-()\s]/g, "");
-let phone = input.value;
+    let phone = input.value;
     if (phone[0] == 8) {
-        console.log("phone if");
         phone = phone.replace('8', '7');
-        console.log(phone);
         input.value = phone;
     }
     if (input.value[0] !== '+') {

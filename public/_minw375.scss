@@ -1,4 +1,5 @@
 @media (min-width: 375px){
+
     .center {
         padding: 0 calc(50% - 170px);
     }
@@ -6,6 +7,7 @@
         height: 100vh;
         color: $white;
         background-position: 60% center;
+        width: 100vw;
         &__nav {
             display: flex;
             justify-content: space-between;
@@ -16,14 +18,13 @@
             margin-top: 5vh;
             text-align: center;
             height: 40vh;
-            display: -webkit-box;
-            display: -ms-flexbox;
+            // height: 60vh;
             display: flex;
             flex-direction: column;
             justify-content: space-around;
             font-size: 24px;
             line-height: 30px;
-            text-align: center;
+            align-items: center;
             
             &__name{
                 font-weight: 600;
@@ -33,14 +34,17 @@
             }
         }
         &__btn {
-            width: 343px;
+            width: 80%;
             height: 60px;
             background: linear-gradient(91.59deg, $lightBlue 0%, $darkBlue 100%);
             border-radius: 10px;
             color: $black;
             font-weight: 600;
             font-size: 20px;
-            line-height: 60px;
+            // line-height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
     }
 
@@ -75,7 +79,7 @@
         }  
         &__list {
             height: 100vh;
-            margin-top: 7vh;
+            margin-top: 5vh;
             display: flex;
             flex-direction: column;
             color: $black;
@@ -83,10 +87,10 @@
             font-size: 28px;
             line-height: 30px;
             align-items: center;
-            gap: 6vh;
+            gap: 3vh;
         }
         &__mobil__mail {
-            font-size: 24px;
+            font-size: 21px;
             line-height: 30px;
         }
         &__socialmedia {
@@ -120,12 +124,14 @@
         overflow-x: hidden;
         transition: 0.5s;
         padding-top: 60px;
-    }
+        
+      
+}
     
     .sidenav .closebtn {
         position: absolute;
         top: 0;
-        right: 25px;
+        right: 0;
         font-size: 45px;
         margin-right: 20px;
         margin-top: 20px;
@@ -216,7 +222,7 @@
         background-repeat: no-repeat;
         background-size: 100% 100%;
         padding-top: 66px;
-        padding-bottom: 66px;
+        padding-bottom: 60px;
         font-weight: 600;
         font-size: 20px;
         line-height: 24px;
@@ -239,7 +245,7 @@
     }
 
     .help {
-        margin-top: 32px;
+        // margin-top: 32px;
         min-height: 10vh;
         font-weight: 600;
         font-size: 20px;
@@ -254,7 +260,7 @@
             font-weight: 600;
             font-size: 32px;
             line-height: 40px;
-            width: 347px;
+            width: 85vw;
             text-align: center;
         }
         &__list {
@@ -299,6 +305,7 @@
             font-size: 32px;
             line-height: 40px;
             padding-bottom: 16px;
+            // width: 100vw;
         }
         &__ol {
             width: 295px;
@@ -365,6 +372,8 @@
             border-radius: 10px;
             box-shadow: 12px 12px 7px rgba(0,0,0,0.2);
             width: 300px;
+            // width: 95%;
+
             height: 502px;
             padding-left: 13px;
             padding-right: 13px;
@@ -377,6 +386,11 @@
         }
     }
 
+    .swiper-slide {
+        width: 100% !important;
+        margin-right: 0 !important;
+    }
+
     .education {
         min-height: 80vh;
         &__h2 {
@@ -386,8 +400,12 @@
             padding-bottom: 24px;
             text-align: center;
         }
+        &__container {
+            display: flex;
+        justify-content: center;
+        }
         &__content {
-            width: 343px;
+            width: 95%;
             height: 480px;
         }
     }
@@ -445,8 +463,8 @@
             font-size: 16px;
             line-height: 20px;
             text-align: center;
-            padding-left: 36px;
-            padding-right: 36px;
+            padding-left: 32px;
+            padding-right: 32px;
             position: relative;
             
             &::before{
@@ -469,7 +487,7 @@
     }
 
     #helpMobile {
-        width: 347px;
+        width: 100vw;
         height: 80px;
         position: absolute;
         top: 0;
@@ -477,14 +495,15 @@
         &::after {
             content: url(img/chevron_up_24px.png);
             position: absolute;
-            right: 3%;
+            right: 7%;
             top: 50px;
             z-index: 1;
         }
     }
 
     .form {
-        min-height: 80vh;
+        // min-height: 80vh;
+        height: 100%;
         background: url(img/bg_form.png);
         background-position: 53% center;
         background-repeat: no-repeat;
@@ -510,12 +529,13 @@
             justify-content: space-between;
             gap: 24px;
             margin-bottom: 32px;
-            width: 343px;
+            width: 95%;
         }
         &__control {
             height: 51px;
             width: 343px;
-            background: url("img/border_gradient_form_mini.png");
+            // width: 100%;
+            background: url("img/border_gradient_form_bigmobile.png");
             background-size: cover;
             background-repeat: no-repeat;
             border: none;
@@ -525,7 +545,8 @@
             color: $grey;
         }
         &__btn {
-            width: 343px;
+            // width: 343px;
+            width: 95%;
             height: 50px;
             background: linear-gradient(91.59deg, $lightBlue 0%, $darkBlue 100%);
             border-radius: 10px;
@@ -551,11 +572,13 @@
         color: $grey;
         position: relative;
         margin-bottom: 24px;
+        width: 100%;
         &__text {
             position: absolute;
             top: -2px;
             left: 38px;
-            width: 311px;
+            // width: 311px;
+            width: 90%;
         }
        }
     }
@@ -575,11 +598,12 @@
         font-size: 24px;
         line-height: 30px;
         text-align: center;
-        padding-top: 100px;
+        padding: 100px 20px 0 20px;
         z-index: 1;
     }
 
     .footer {
+        margin-top: 0;
         color: $black;
         text-align: center;
         display: flex;
@@ -607,6 +631,7 @@
             &__img {
                 height: 10px;
                 width: 16px;
+                display: inline !important;
             }
         }
         &__socialmedia {
@@ -671,6 +696,19 @@
         transform: rotate(45deg);
         
     }
+
+    .privacy {
+        &__closebtn {
+            font-size: 28px;
+            top: 9px;
+        }
+        &__h1 {
+            padding-top: 25px;
+        }
+        &__block {
+            padding: 10px 0;
+        }
+    }
    
     .show_desctop {
         display: none;
@@ -681,7 +719,7 @@
     }
 
     .hide_mobil {
-        display: block;
+        display: block !important;
     }
 
     .hide_nomobil {
@@ -698,5 +736,11 @@
 
     .hide_desktop {
         display: block;
+    }
+    .swiper_left {
+        left: 0 !important;
+    }
+    .swiper_right {
+        right: 0 !important;
     }
 }

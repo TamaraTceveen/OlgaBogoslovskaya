@@ -406,6 +406,30 @@
         }
     }
 
+    .privacy {
+       
+        font-size: 20px;
+        &_closebtn {
+            font-size: 32px;
+        }
+        &__h1 {
+            font-size: 32px;
+        }
+        &__h2 {
+            font-size: 30px;
+        }
+        &__block {
+            padding: 15px 0;
+        }
+        &__down{
+            right: -60px;
+            position: absolute;
+        }
+        &__chevrons {
+
+        }
+    }
+
     .show_desctop {
         display: none;
     }
