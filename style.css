@@ -762,7 +762,7 @@ input[type="checkbox"] {
   }
   .form {
     height: 148vh;
-    background: url(img/bg_form.png);
+    background: url(img/bg_form.jpg);
     background-position: 53% center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1643,7 +1643,7 @@ input[type="checkbox"] {
   }
   .form {
     height: 100%;
-    background: url(img/bg_form.png);
+    background: url(img/bg_form.jpg);
     background-position: 53% center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -2370,6 +2370,7 @@ input[type="checkbox"] {
         -ms-flex-pack: start;
             justify-content: flex-start;
     gap: 9%;
+    width: 100%;
   }
   .header__nav {
     position: relative;
