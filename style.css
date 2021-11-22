@@ -1383,9 +1383,9 @@ input[type="checkbox"] {
   }
   .help__h2 {
     font-weight: 600;
-    font-size: 32px;
+    font-size: 31px;
     line-height: 40px;
-    width: 85vw;
+    width: 100%;
     text-align: center;
   }
   .help__list {

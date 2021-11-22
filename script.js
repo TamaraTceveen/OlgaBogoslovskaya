@@ -44,7 +44,6 @@ helpMobile.addEventListener("click", function () {
 let swiper = new Swiper('.mySwiperReview', {
     cssMode: true,
     speed: 600,
-    loop: true,
     parallax: true,
     mousewheel: {
         releaseOnEdges: true,
@@ -67,7 +66,6 @@ const enableSwiper = function () {
         speed: 600,
         slidesPerView: 1,
         spaceBetween: 30,
-        loop: true,
         pagination: {
             el: '.swiper-pagination',
             clickable: true,
@@ -87,7 +85,6 @@ const enableSwiperEducation = function () {
         speed: 600,
         slidesPerView: 1,
         spaceBetween: 30,
-        loop: true,
         pagination: {
             el: '.swiper-pagination',
             clickable: true,
@@ -210,7 +207,7 @@ function emailTest(input) {
 
 
 function phoneTest(input) {
-    
+
     input.value = input.value.replace(/[-()\s]/g, "");
     let phone = input.value;
     if (phone[0] == 8) {
