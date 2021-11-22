@@ -1,1 +1,3 @@
-User-agent: *<br /> Disallow: /tech
+User-agent: *
+Disallow: /tech
+Sitemap: https://ataraxia.space/sitemap.xml
