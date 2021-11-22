@@ -1973,8 +1973,6 @@ input[type="checkbox"] {
   }
   .menu {
     height: 121px;
-    background-image: url(img/testbgr.png);
-    background-position-y: bottom;
   }
   .menu__btn {
     width: 90%;
