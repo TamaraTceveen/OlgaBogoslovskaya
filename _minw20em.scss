@@ -492,7 +492,7 @@
     }
 
     .form {
-        height: 140vh;
+        height: 148vh;
         background: url(img/bg_form.png);
         background-position: 53% center;
         background-repeat: no-repeat;
@@ -556,7 +556,7 @@
         line-height: 24px;
         color: $grey;
         position: relative;
-        margin-bottom: 24px;
+        margin-bottom: 55px;
         width: 100%;
         &__text {
             position: absolute;
@@ -565,7 +565,16 @@
             width: 90%;
             font-size: 18px;
         }
+        &__privasy {
+            position: absolute;
+            position: absolute;
+            top: 55px;
+            left: 0;
+            width: 98%;
+            font-size: 13px;
+        }
        }
+       
     }
 
     #form__thanks {
@@ -613,6 +622,7 @@
             line-height: 24px;
             margin-top: 20px;
             margin-bottom: 20px;
+            
             &__img {
                 height: 10px;
                 width: 16px;
@@ -624,17 +634,20 @@
                 padding: 20px;
             }
         }
-        &__up {
-            position: absolute;
-            bottom: 19px;
-            right: 0;
-            
-        }
+       
         &__personaldata {
             font-weight: normal;
             font-size: 14px;
             line-height: 20px;
             color: $grey;
+        }
+        &__block {
+            position: relative;
+            &__up {
+                position: absolute;
+                top: 57%;
+                right: 0;
+            }
         }
     } 
 
@@ -707,7 +720,6 @@
             right: 10px;
             height: 100px;
             width: 40px;
-            // align-items: flex-end;
             padding-left: 78vw;
         }
         &__down {

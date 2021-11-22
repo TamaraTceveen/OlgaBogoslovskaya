@@ -34,7 +34,7 @@ ul {
 
 .header {
   position: relative;
-  background-image: url(img/header.png);
+  background-image: url(img/header.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% center;
@@ -761,7 +761,7 @@ input[type="checkbox"] {
     z-index: 1;
   }
   .form {
-    height: 140vh;
+    height: 148vh;
     background: url(img/bg_form.png);
     background-position: 53% center;
     background-repeat: no-repeat;
@@ -843,7 +843,7 @@ input[type="checkbox"] {
     line-height: 24px;
     color: #969696;
     position: relative;
-    margin-bottom: 24px;
+    margin-bottom: 55px;
     width: 100%;
   }
   .form__checkbox__text {
@@ -852,6 +852,14 @@ input[type="checkbox"] {
     left: 38px;
     width: 90%;
     font-size: 18px;
+  }
+  .form__checkbox__privasy {
+    position: absolute;
+    position: absolute;
+    top: 55px;
+    left: 0;
+    width: 98%;
+    font-size: 13px;
   }
   #form__thanks {
     display: none;
@@ -918,16 +926,19 @@ input[type="checkbox"] {
   .footer__socialmedia__links {
     padding: 20px;
   }
-  .footer__up {
-    position: absolute;
-    bottom: 19px;
-    right: 0;
-  }
   .footer__personaldata {
     font-weight: normal;
     font-size: 14px;
     line-height: 20px;
     color: #969696;
+  }
+  .footer__block {
+    position: relative;
+  }
+  .footer__block__up {
+    position: absolute;
+    top: 57%;
+    right: 0;
   }
   #comment {
     height: 120px;
@@ -1713,7 +1724,7 @@ input[type="checkbox"] {
     line-height: 24px;
     color: #969696;
     position: relative;
-    margin-bottom: 24px;
+    margin-bottom: 40px;
     width: 100%;
   }
   .form__checkbox__text {
@@ -1721,6 +1732,10 @@ input[type="checkbox"] {
     top: -2px;
     left: 38px;
     width: 90%;
+  }
+  .form__checkbox__privasy {
+    width: 100%;
+    font-size: 15px;
   }
   #form__thanks {
     display: none;
@@ -1779,6 +1794,9 @@ input[type="checkbox"] {
     line-height: 24px;
     margin-top: 20px;
     margin-bottom: 20px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .footer__mail__img {
     height: 10px;
@@ -1788,16 +1806,20 @@ input[type="checkbox"] {
   .footer__socialmedia__links {
     padding: 20px;
   }
-  .footer__up {
-    position: absolute;
-    bottom: 19px;
-    right: 0;
-  }
   .footer__personaldata {
     font-weight: normal;
     font-size: 15px;
     line-height: 20px;
     color: #969696;
+    padding-bottom: 20px;
+  }
+  .footer__block {
+    position: relative;
+  }
+  .footer__block__up {
+    position: absolute;
+    bottom: 0;
+    right: 0;
   }
   #comment {
     height: 120px;
@@ -2240,6 +2262,10 @@ input[type="checkbox"] {
   .form__checkbox__text {
     width: 606px;
   }
+  .form__checkbox__privasy {
+    font-size: 18px;
+    top: 40px;
+  }
   .footer__name {
     font-size: 32px;
     line-height: 40px;
@@ -2268,9 +2294,7 @@ input[type="checkbox"] {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-  }
-  .footer__up {
-    right: -60px;
+    width: 90vw;
   }
   .footer__personaldata {
     font-size: 20px;
@@ -2397,7 +2421,6 @@ input[type="checkbox"] {
   }
   .menu {
     height: 30px;
-    background-image: url(img/testbgr.png);
     background-position-y: bottom;
     padding-top: 84px;
     -webkit-box-sizing: border-box;
@@ -2913,8 +2936,8 @@ input[type="checkbox"] {
     font-size: 20px;
     line-height: 24px;
   }
-  .footer__up {
-    right: 5%;
+  .footer__socialmedia {
+    width: 30vw;
   }
   #form__thanks {
     width: 55vw;

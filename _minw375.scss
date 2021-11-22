@@ -571,7 +571,7 @@
         line-height: 24px;
         color: $grey;
         position: relative;
-        margin-bottom: 24px;
+        margin-bottom: 40px;
         width: 100%;
         &__text {
             position: absolute;
@@ -579,6 +579,11 @@
             left: 38px;
             // width: 311px;
             width: 90%;
+        }
+        &__privasy {
+            
+            width: 100%;
+            font-size: 15px;
         }
        }
     }
@@ -628,6 +633,7 @@
             line-height: 24px;
             margin-top: 20px;
             margin-bottom: 20px;
+            justify-content: center;
             &__img {
                 height: 10px;
                 width: 16px;
@@ -640,17 +646,20 @@
                 padding: 20px;
             }
         }
-        &__up {
-            position: absolute;
-            bottom: 19px;
-            right: 0;
-            
-        }
         &__personaldata {
             font-weight: normal;
             font-size: 15px;
             line-height: 20px;
             color: $grey;
+            padding-bottom: 20px;
+        }
+        &__block {
+            position: relative;
+            &__up {
+                position: absolute;
+                bottom: 0;
+                right: 0;
+            }
         }
     } 
 

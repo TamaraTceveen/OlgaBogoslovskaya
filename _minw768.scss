@@ -176,7 +176,6 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        // margin-top: 48px;
         &__h2 {
             width: 527px;
             font-size: 48px;
@@ -347,6 +346,10 @@
             &__text {
                 width: 606px;
             }
+            &__privasy {
+                font-size: 18px;
+                top: 40px;
+            }
         }
     }
 
@@ -373,9 +376,7 @@
             display: flex;
             gap: 35px;
             justify-content: center;
-        }
-        &__up {
-            right: -60px;
+            width: 90vw;
         }
         &__personaldata {
             font-size: 20px;
@@ -400,12 +401,6 @@
         height: 510px;
     }
 
-    .footer {
-        &__name {
-
-        }
-    }
-
     .privacy {
        
         font-size: 20px;
@@ -425,9 +420,7 @@
             right: -60px;
             position: absolute;
         }
-        &__chevrons {
 
-        }
     }
 
     .show_desctop {

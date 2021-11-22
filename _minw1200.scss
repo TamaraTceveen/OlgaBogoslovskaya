@@ -18,7 +18,6 @@
             align-items: flex-start;
             flex-direction: column;
             margin-left: 4%;
-            // margin-top: 8vh;
             margin-top: 0;
             &__name{
                 font-weight: 600;
@@ -50,7 +49,6 @@
 
     .menu {
         height: 30px;
-        background-image: url(img/testbgr.png);
         background-position-y: bottom;
         padding-top: 84px;
         box-sizing: border-box;
@@ -520,9 +518,9 @@
             font-size: 20px;
             line-height: 24px;
         }
-        &__up {
-            right: 5%;
-        }
+       &__socialmedia {
+        width: 30vw;
+       }
     }
 
     #form__thanks {
