@@ -84,7 +84,10 @@
             line-height: 40px;
             align-items: center;
         }
-        
+        &__socialmedia {
+            width: 40px;
+            height: 40px;
+        }
     }
 
     #imgMail {
@@ -188,7 +191,7 @@
                 padding-left: 20px;
                 &::after{
                     left: -22px;
-                    content: url(img/check_box_tablet.png);
+                    content: url(img/check_box.svg);
                 }
             }
         }
@@ -266,12 +269,14 @@
             
             &::before{
                 position: absolute;
-                content: url(img/quotes_midi.png);
+                content: '';
+                background: url(img/quotes.svg);
                 display: block;
-                background-size: auto;
-                width: 47px;
+                background-size: cover;
+                background-repeat: no-repeat;
+                width: 53px;
                 height: 42px;
-                left: 0;
+                left: 71px;
                 top: 3px;
             }
             &__name {
@@ -365,6 +370,7 @@
             line-height: 22px;
             display: flex;
             gap: 15px;
+            justify-content: center;
             &__img {
                 width: 27px;
                 height: 22px;
@@ -375,6 +381,10 @@
             gap: 35px;
             justify-content: center;
             width: 90vw;
+            &__links {
+                width: 40px;
+                height: 40px;
+            }
         }
         &__personaldata {
             font-size: 20px;

@@ -249,7 +249,7 @@
         color: $black;
         position: relative;
         &_active::after{
-            content: url(img/chevron_down_24px.png) !important;
+            content: url(img/chevron_down_24px.svg) !important;
         }
         &__h2 {
             font-weight: 600;
@@ -273,6 +273,12 @@
                 &::after {
                     position: absolute;
                     content: url(img/check_box_24px.png);
+                    // content: '';
+                    // background: url(img/check_box.svg);
+                    // background-size: cover;
+                    // background-repeat: no-repeat;
+                    width: 24px;
+                    height: 24px;
                     left: -32px;
                     top: 0;
                 }
@@ -459,13 +465,15 @@
             
             &::before{
                 position: absolute;
-                content: url(img/quotes_mini.png);
+                content: '';
+                background: url(img/quotes.svg);
+                background-size: cover;
+                background-repeat: no-repeat;
                 display: block;
-                background-size: auto;
-                width: 47px;
-                height: 42px;
-                left: 0;
-                top: 3px;
+                width: 34px;
+                height: 26px;
+                left: 6px;
+                top: 0px;
             }
             &__name {
                 font-weight: 600;
@@ -483,7 +491,7 @@
         top: 0;
         left: -15px;    
         &::after {
-            content: url(img/chevron_up_24px.png);
+            content: url(img/chevron_up_24px.svg);
             position: absolute;
             right: 3%;
             top: 50px;

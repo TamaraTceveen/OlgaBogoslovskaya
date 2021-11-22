@@ -31,6 +31,10 @@
         }
     }
 
+    .logo img {
+        padding-right: 12px;
+    }
+
     .standart_text {
         font-size: 38px;
         width: 879px;
@@ -217,7 +221,7 @@
                 }
                 &::after{
                     left: -39px;
-                    content: url(img/check_box_desctop.png);
+                    content: url(img/check_box.svg);
                 }
             }
         }
@@ -437,10 +441,12 @@
             
             &::before{
                 position: absolute;
-                content: url(img/quotes.png);
+                content: '';
+                background: url(img/quotes.svg);
                 display: block;
-                background-size: auto;
-                width: 47px;
+                background-size: cover;
+                background-repeat: no-repeat;
+                width: 55px;
                 height: 42px;
                 left: 185px;
                 top: 3px;
@@ -521,6 +527,10 @@
         }
        &__socialmedia {
         width: 30vw;
+        &__links {
+            width: 40px;
+            height: 40px;
+        }
        }
     }
 
