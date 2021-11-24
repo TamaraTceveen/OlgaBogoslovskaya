@@ -7,7 +7,6 @@
         height: 100vh;
         color: $white;
         background-position: 60% center;
-        width: 100vw;
         &__nav {
             display: flex;
             justify-content: space-between;
@@ -29,11 +28,9 @@
                 font-weight: 600;
                 font-size: 32px;
                 line-height: 40px;
-                
             }
         }
         &__btn {
-            width: 80%;
             height: 60px;
             background: linear-gradient(91.59deg, $lightBlue 0%, $darkBlue 100%);
             border-radius: 10px;
@@ -51,7 +48,6 @@
         align-items: center;
         width: 150px;
         height: 40px;
-        margin-left: 16px;
         padding-top: 22px;
         font-weight: 600;
         font-size: 16px;
@@ -67,7 +63,6 @@
         padding-top: 15px;
         position: relative;
         &__btn {
-            margin-right: 20px;
             background-color: transparent;
             font-size: 30px;
             color: $white;
@@ -105,7 +100,7 @@
             line-height: 50px;
             filter: drop-shadow(5px 5px 15px rgba(2, 120, 120, 0.5));
             background: url("img/border_gradient.png");
-            background-size: cover;
+            background-size: 220px;
             background-repeat: no-repeat;
             border: none;
         }
@@ -122,7 +117,6 @@
         overflow-x: hidden;
         transition: 0.5s;
         padding-top: 60px;
-        
       
 }
     
@@ -131,10 +125,8 @@
         top: 0;
         right: 0;
         font-size: 45px;
-        margin-right: 20px;
-        margin-top: 20px;
-        padding: 10px;
-     
+        margin-top: 10px;
+        padding: 0 calc(50% - 170px);
     }
       
       @media screen and (max-height: 450px) {
@@ -250,7 +242,7 @@
         color: $black;
         position: relative;
         &_active::after{
-            content: url(img/chevron_down_24px.svg) !important;
+            content: url(img/chevron_up_24px.svg) !important;
             
         }
         &__h2 {
@@ -274,7 +266,12 @@
                 position: relative;
                 &::after {
                     position: absolute;
-                    content: url(img/check_box.svg);
+                    content: '';
+                    background: url(img/check_box_24px.svg);
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    width: 24px;
+                    height: 24px;
                     left: -32px;
                     top: 0;
                 }
@@ -314,7 +311,7 @@
             & li {
                 counter-increment: my-awesome-counter;
                 position: relative;
-                padding-left: 30px;
+                padding-left: 44px;
                 &::before{
                     content: counter(my-awesome-counter);
                     width: 32px;
@@ -323,7 +320,7 @@
                     background: linear-gradient(91.66deg, $lightBlue 0.05%, $darkBlue 99.94%);
                     position: absolute;
                     top: 0;
-                    left: -15px;
+                    left: 0;
                     display: block;
                     font-weight: 600;
                     font-size: 18px;
@@ -367,7 +364,7 @@
             box-sizing: border-box;
             border-radius: 10px;
             box-shadow: 12px 12px 7px rgba(0,0,0,0.2);
-            width: 300px;
+            width: 276px;
             height: 502px;
             padding-left: 13px;
             padding-right: 13px;
@@ -380,9 +377,15 @@
         }
     }
 
-    .swiper-slide {
-        width: 100% !important;
-        margin-right: 0 !important;
+    .mySwiperPrice {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 38px !important;
+        &__slide {
+            display: flex;
+            justify-content: center;
+        }
     }
 
     .education {
@@ -399,22 +402,20 @@
         justify-content: center;
         }
         &__content {
-            width: 95%;
+            width: 100%;
             height: 480px;
         }
     }
 
-    .swiper {
-        width: 100%;
+    .mySwiperEducation {
         margin-left: auto;
         margin-right: auto;
         padding-bottom: 38px !important;
-      }
-
-    .swiper-slide {
-        display: flex;
-        justify-content: center;
-        padding-bottom: 15px;
+        &__slide {
+            display: flex;
+            justify-content: center;
+            padding-bottom: 15px;
+        }
     }
 
     .swiper-slide .title {
@@ -460,7 +461,7 @@
             padding-left: 32px;
             padding-right: 32px;
             position: relative;
-            
+            height: 640px;
             &::before{
                 position: absolute;
                 content: '';
@@ -489,7 +490,7 @@
         top: 0;
         left: 0;
         &::after {
-            content: url(img/chevron_up_24px.svg);
+            content: url(img/chevron_down_24px.svg);
             position: absolute;
             right: 7%;
             top: 50px;
@@ -498,7 +499,7 @@
     }
 
     .form {
-        height: 100%;
+        height: 110vh;
         background: url(img/bg_form.jpg);
         background-position: 53% center;
         background-repeat: no-repeat;
@@ -522,14 +523,12 @@
             justify-content: space-between;
             gap: 24px;
             margin-bottom: 32px;
-            width: 95%;
+            width: 100%;
         }
         &__control {
             height: 51px;
             width: 343px;
-            background: url("img/border_gradient_form_bigmobile.png");
-            background-size: cover;
-            background-repeat: no-repeat;
+            background: transparent;
             border: none;
             padding-left: 8px;
             font-size: 20px;
@@ -537,13 +536,12 @@
             color: $grey;
         }
         &__btn {
-            width: 95%;
+            width: 100%;
             height: 50px;
             background: linear-gradient(91.59deg, $lightBlue 0%, $darkBlue 100%);
             border-radius: 10px;
             border: none;
-            box-shadow: 7px 7px 7px rgba(0,0,0,0.2);
-            font-weight: 600;
+            box-shadow: 5px 5px 5px rgba(2, 120, 120, 0.3);
             font-size: 20px;
             line-height: 24px;
             color: $black;
@@ -554,6 +552,7 @@
         }
         &__inputs {
             width: 100%;
+            background-size: 337px;
         }
        &__checkbox {
         font-style: normal;
@@ -585,6 +584,7 @@
         align-items: center;
         position: absolute;
         height: 410px;
+        width: 82%;
         padding-top: 40px;
         background: linear-gradient(91.66deg, #AEFFF5 0.05%, #6AD2F3 99.94%);
         box-shadow: 5px 5px 15px #A1A1A1;
@@ -603,10 +603,11 @@
         text-align: center;
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
-        height: 30vh;
+        justify-content: space-between;
+        height: 100%;
         position: relative;
         &__name {
+            padding-top: 35px;
             font-weight: normal;
             font-size: 24px;
             line-height: 30px;
@@ -627,8 +628,7 @@
             align-items: center;
             display: flex;
             &__img {
-                height: 18px;
-                width: 22px;
+                height: 24px;
                 display: inline-block !important;
             }
         }
@@ -654,7 +654,6 @@
             }
         }
     } 
-
     
     #comment {
         height: 120px;
@@ -671,7 +670,6 @@
         font: inherit;
         color: currentColor;
         position: relative;
-  
     }
 
     input[type="checkbox"]::before {
@@ -682,7 +680,6 @@
         transform: scale(0);
         transition: 120ms transform ease-in-out;
         box-shadow: inset 1em 1em var(--form-control-color);
-  
     }
 
     input[type=checkbox]:checked::before {
@@ -695,7 +692,10 @@
         border-width: 0 3px 3px 0;
         transform: scale(1);
         transform: rotate(45deg);
-        
+    }
+
+    .site__block__up {
+        top: 87%;
     }
 
     .privacy {

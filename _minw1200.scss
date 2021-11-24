@@ -1,117 +1,9 @@
 @media (min-width: 1200px){
     .center {
-        padding: 0 calc(50% - 850px);
+        padding: 0 calc(50% - 45vw);
     }
-    .header {
-        height: 800px;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        gap: 9%;
-        width: 100%;
-        &__nav {
-            position: relative;
-            height: 14vh;
-        }
-        &__text {
-            text-align: left;
-            display: flex;
-            align-items: flex-start;
-            flex-direction: column;
-            margin-left: 4%;
-            margin-top: 0;
-            &__name{
-                font-weight: 600;
-                font-size: 60px;
-                line-height: 72px;
-            }
-        }
-        &__btn {
-         text-align: center;
-        }
-    }
-
-    .logo img {
-        padding-right: 12px;
-    }
-
-    .standart_text {
-        font-size: 38px;
-        width: 879px;
-        text-align: left;
-        margin-top: 40px;
-    }
-
-    .mobil_text {
-        color: #FAF6F6;
-        display: flex;
-        height: 47px;
-        font-weight: 700;
-        align-items: center;
-        font-size: 27px;
-        margin-left: 800px;
-    }
-
-    .menu {
-        height: 30px;
-        background-position-y: bottom;
-        padding-top: 84px;
-        box-sizing: border-box;
-        padding-right: 30px;
-        
-        &__btn {
-            width: 90%;
-            max-width: 222px;
-            height: 50px;
-            background: url("img/border_gradient.svg");
-            border-radius: 10px;
-            font-size: 24px;
-            background-size: cover;
-            background-repeat: no-repeat;
-        }
-        &__desctop {
-            display: flex !important;
-            flex-direction: row;
-            max-width: 1500px;
-            gap: 40px;
-            font-weight: 600;
-            font-size: 20px;
-            line-height: 24px;
-            align-items: center;
-            height: 95px;
-            justify-content: end;
-            &__hover{
-                position: relative;
-                background-clip: text;
-                &:hover {
-                    background-image: linear-gradient(91.66deg, $lightBlue 0.05%, $darkBlue 99.94%);
-                    background-size: 100%;
-                    background-repeat: repeat;
-                    -webkit-background-clip: text;
-                    -webkit-text-fill-color: transparent; 
-                }
-            }
-            
-            &__nav {
-                width: 100%;
-            }
-            
-            &__phone {
-                margin-left: 114px;
-            }
-            &__button:hover {
-                background: linear-gradient(91.59deg, $lightBlue 0%, $darkBlue 100%);
-                border-radius: 10px;
-                color: $black;
-}
-        }
-        &_sidenav_btn {
-            margin: 0;
-        }
-    }
-
     .about {
-        min-height: 80vh;
+        min-height: 850px;
         &__h1 {
             font-weight: 600;
             font-size: 60px;
@@ -121,358 +13,186 @@
             padding-top: 60px;
         }
         &__text {       
-            font-size: 24px;
+            font-size: 22px;
             line-height: 32px;
+            max-width: 1600px;
         }
         &__bgr__big {
             display: flex;
             flex-direction: row;
             width: 100%;
             gap: 34px;
-            justify-content: center;
+            justify-content: space-between;
             align-items: flex-end;
             &__text {
-                width: 746px;
+                width: 600px;
             }
         }
         &__bgr {
             width: 520px;
-            height: 100%;
+            height: 300px;
             &__img {
                 width: 520px;
                 height: 520px;
-                top: -517px;
+                top: -511px;
                 right: 0;
             }
             &__text {
-                width: 746px;
+                width: 600px;
                 text-align: left;
                 padding: 0;
+                margin-top: 45px;
                 & p {
-                    width: 746px;   
+                    width: 600px;   
                 }
             }
         }
         &__endtext {
             padding-top: 24px;
-            font-size: 32px;
+            font-size: 28px;
             line-height: 40px;
             width: 493px;
             align-self: flex-end;
             &::after {
                 top: 57%;
-                right: 0;
+                right: 14px;
                 font-size: 32px;
             }
             &::before {
                 top: 21px;
-                left: 16px;
+                left: 32px;
                 font-size: 32px;
             }
         }
         
     }
-
     .important {
-        padding-top: 100px;
-        padding-bottom: 100px;
-        font-size: 32px;
-        line-height: 40px;
-        &__ul {
-            align-items: center;
-            gap: 145px;
-            &_after::after {
-                content: url(img/wave_line.png);
-                bottom: -102px;
-                left: 17%;
-            }
-            & li {
-                width: 979px;
+        &__ul{
+            &_after:last-child{
+                width: 959px;
+                    &::after {
+                        content: '';
+                    }
             }
         }
     }
-
     .help {
-        min-height: 90vh;
-        font-size: 32px;
-        line-height: 40px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-top: 60px;
-        &__h2 {
-            width: 972px;
-            font-size: 60px;
-            line-height: 72px;
-            padding-bottom: 60px;
-        }
+        margin-top: 50px;
         &__list {
-            max-height: 100%;
-            flex-wrap: wrap;
-            flex-direction: row;
-            justify-content: center;
-            & li {
-                width: 468px;
-                padding-left: 20px;
-                
-                &:nth-child(odd) {
-                    padding-right: 150px;
-                    padding-bottom: 40px;
-                }
-                &::after{
-                    left: -39px;
-                    content: url(img/check_box.svg);
+            width: 900px;
+            padding-left: 76px;
+            & li{
+                padding-bottom: 5px;
+                &:nth-child(even)::after {
+                    left: -11px;
                 }
             }
-        }
-    }
-    
-    .work {
-        min-height: 700px;
-        font-size: 24px;
-        line-height: 32px;
-        background-position: center top;
-        background-size: 100% 100%;
-        &__h2 {
-            width: 420px;
-            font-size: 60px;
-            line-height: 72px;
-            padding-top: 60px;
-            padding-bottom: 60px;
-        }
-        &__ol {
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: center;
-            padding: 0;
-            & li {
-                width: 569px;
-                padding-left: 50px;
-                &:nth-child(odd) {
-                    padding-right: 100px;
-                    padding-bottom: 60px;
-                }
-                &::before {
-                    width: 50px;
-                    height: 50px;
-                    line-height: 50px;
-                    font-size: 24px;
-                }
+            & li::after {
+                left: -42px;
+                width: 40px;
+                height: 40px;
+            }
+            & li:nth-child(odd) {
+                padding-right: 200px;
             }
         }
     }
 
-    .price {
-        min-height: 80vh;
-        &__h2 {
-            font-size: 60px;
-            line-height: 72px;
-            padding-top: 60px;
-            padding-bottom: 60px;
-        }
-        &__top__title {
-            font-size: 40px;
-            line-height: 48px;
-        }
-        &__title {
-            font-size: 32px;
-            line-height: 40px;
-            width: 394px;
-            z-index: 2;
-        }
-        &__content {
-            font-size: 20px;
-            line-height: 24px;
-            width: 413px;
-            height: 744px;
-            box-shadow: none;
-            &__conteiner {
-                color: transparent;
-                font-size: 24px;
-                line-height: 32px;
-                margin-bottom: 8px;
-            }
-        }
+    .work__ol li::before {
+        width: 35px;
+        height: 35px;
     }
 
-    .swiper {
-        width: 90%;
-        margin-left: auto;
-        margin-right: auto;
-        padding-bottom: 15px !important;
-      }
-
-    .swiper-slide {
-        width: 413px !important;
-        height: 744px !important;
-        margin-right: 0 !important;
-        
-    }
-
-    .mySwiperPrice > div {
-        display: flex;
-        justify-content: space-around !important;
-        
-    }
-
-    #priceFirstSlide {
-        background: transparent;
-        background-size: cover;
-        position: relative;
-        &::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            height: 100%;
-            width: 100%;
-            background: url(img/price_desctop1.png);
-            background-size: cover;
-            z-index: -1;
-            box-shadow: 12px 12px 7px rgba(0,0,0,0.2);
+    .mySwiperPrice {
+        height: 600px;
+        & > div {
+            display: flex;
+            justify-content: space-between;
         }
-        &:hover::before {
-            content: '';
-            filter: blur(5px);
-            transition: all 0.4s ease-out;
-            box-shadow: none;
-        }
-        &:hover .price__content__conteiner {
-            transition: all 0.4s ease-out;
-            color: $black;
-        }
-    }
-
-    #priceSecondSlide {
-        background: transparent;
-        background-size: cover;
-        position: relative;
-        &::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            height: 100%;
-            width: 100%;
-            background: url(img/price_desctop2.png);
-            background-size: cover;
-            z-index: -1;
-            box-shadow: 12px 12px 7px rgba(0,0,0,0.2);
-        }
-        &:hover::before {
-            content: '';
-            filter: blur(5px);
-            transition: all 0.4s ease-out;
-            box-shadow: none;
-        }
-        &:hover .price__content__conteiner {
-            transition: all 0.4s ease-out;
-            color: $black;
-        }
-    }
-
-    #priceThirdSlide {
-        background: transparent;
-        background-size: cover;
-        position: relative;
-        &::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            height: 100%;
-            width: 100%;
-            background: url(img/price_desctop3.png);
-            background-size: cover;
-            z-index: -1;
-            box-shadow: 12px 12px 7px rgba(0,0,0,0.2);
-        }
-        &:hover::before {
-            content: '';
-            filter: blur(5px);
-            transition: all 0.4s ease-out;
-            box-shadow: none;
-        }
-        &:hover .price__content__conteiner {
-            transition: all 0.4s ease-out;
-            color: $black;
+        &__slide {
+            width: 365px !important;
+            margin-right: 0 !important;
+            position: relative !important;
         }
     }
 
     .education {
+        min-height: 550px !important;
         &__h2 {
             font-size: 60px;
             line-height: 72px;
             padding-bottom: 60px;
-            padding-top: 120px;
+            padding-top: 80px;
         }
         &__content {
-            width: 524px;
-            height: 750px;
+            height: 550px;
+            margin-right: 30px;
+        }
+        &__container {
+            width: 525px;
+            position: relative;
+        }
+    }
+    #diplom1 {
+        position: absolute;
+        top: 0;
+        left: 5px;
+        width: 524px;
+        height: 750px;
+    }
+
+    #diplom2 {
+        position: absolute;
+        top: 0;
+        right: -427px;
+        width: 524px;
+        height: 750px;
+    }
+
+    .mySwiperEducation {
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 38px !important;
+        height: 750px;
+        max-width: 1600px;
+        &__slide {
+            display: flex;
+            justify-content: center;
+            padding-bottom: 15px;
+            width: 335px !important;
             margin-right: 30px;
         }
     }
 
-    .mySwiperEducation > div {
-        display: flex;
-        justify-content: center;
-        gap: 110px;
-    }
-
     .review {
-        min-height: 66vh;
-        &__h2 {
-            font-size: 60px;
-            line-height: 72px;
-            padding-top: 120px;
-        }
-        &__swiper > div {
-            width: 100% !important;
-            height: 100% !important;
-        }
+        min-height: 700px;
+        // &__swiper > div {
+        //     width: 100% !important;
+        // }
         &__content {
             padding-top: 60px;
             font-size: 24px;
             line-height: 32px;
             text-align: left;
-            padding-left: 292px;
-            padding-right: 292px;
-            width: 856px;
-            
-            &::before{
-                position: absolute;
-                content: '';
-                background: url(img/quotes.svg);
-                display: block;
-                background-size: cover;
-                background-repeat: no-repeat;
-                width: 55px;
-                height: 42px;
-                left: 185px;
-                top: 3px;
-            }
-            &__name {
-                font-size: 24px;
-                line-height: 28px;
-                margin-top: 16px;
-                
+            padding-left: 20%;
+            padding-right: 255px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 865px;
+            &::before {
+                left: 153px;
             }
         }
     }
 
-    .swiper-button-prev {
-        background-image: url(img/chevron_left_big.png) !important;
-        width: 50px !important;
-        height: 50px !important;
+    .mySwiperReview {
+        height: 556px !important;
+        padding-bottom: 30px;
     }
-    
-    .swiper-button-next {
-        background-image: url(img/chevron_right_big.png) !important;
-        width: 50px !important;
-        height: 50px !important;
-    }
-
     .form {
+        height: 1000px;
+       
         &__h2 {
             width: 751px;
             font-size: 40px;
@@ -485,10 +205,7 @@
             width: 635px;
         }
         &__control {
-            background: url(img/border_gradient_form.png);
             width: 635px;
-            background-size: cover;
-            background-repeat: no-repeat;
         }
         &__checkbox {
             cursor: pointer;
@@ -496,17 +213,22 @@
         &__btn:hover {
             cursor: pointer;
         }
+        &__inputs {
+            background-size: 635px;
+        }
     }
 
     .footer {
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
-        width: 99vw;
+        width: 100%;
         align-items: center;
+        justify-content: space-between;
+        
         &__name {
             font-size: 40px;
             line-height: 48px;
+            width: 390px;
         }
         &__p {
             font-size: 24px;
@@ -520,17 +242,23 @@
         }
         &__personaldata {
             position: absolute;
-            left: 13%;
-            bottom: 36px;
+            left: 0;
+            bottom: 0;
             font-size: 20px;
             line-height: 24px;
         }
+        &__block {
+            height: 117px;
+        }
        &__socialmedia {
-        width: 30vw;
+        width: 370px;
         &__links {
             width: 40px;
             height: 40px;
         }
+       }
+       &__up {
+           width: 40px;
        }
     }
 
@@ -546,68 +274,16 @@
     .form__thanks_p {
         width: 341px;
     }
-
-    .privacy {
-        font-size: 20px;
-        &__closebtn {
-            right: 50px;
-            font-size: 40px;
-            &:hover {
-                color: $black;
-                transition: all 0.4s ease-out;
-            }
-        }
-        &__h1 {
-            padding-top: 50px;
-            font-size: 32px;
-        }
-        &__h2 {
-            font-size: 30px;
-        }
-        &__block {
-            padding: 15px 0;
-        }
-        &__down{
-            right: 0;
-            position: absolute;
-            padding-bottom: 10px;
-        }
-        &__chevrons {
-            padding-left: 84vw;
-            width: 100px;
-        }
-        &__btn {
-            display: block;
-        }
-        &__btn:hover {
-            background: linear-gradient(91.59deg, $lightBlue 0%, $darkBlue 100%);
-            border-radius: 10px;
-            color: $black;
-        }
+    .swiper-button-prev {
+        width: 50px !important;
+        height: 50px !important;
     }
-
-
-    .show_desctop {
-        display: inline !important;
+    
+    .swiper-button-next {
+        width: 50px !important;
+        height: 50px !important;
     }
-    .show_tablet {
-        display: none;
+    .footer__up {
+        width: 50px;
     }
-
-    .hide_mobil {
-        display: none;
-    }
-
-    .hide_nomobil {
-        display: block;
-    }
-
-    .hide_desktop {
-        display: none;
-    }
-
-    .hide_onlyonmobil {
-        display: block;
-    }
-
 }

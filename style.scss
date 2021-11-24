@@ -3,6 +3,7 @@
 * {
     padding: 0;
     margin: 0;
+    
 }
 
 a {
@@ -92,7 +93,7 @@ ul {
 }
 
 .swiper-button-prev {
-    background-image: url(img/chevron_left.png) !important;
+    background-image: url(img/chevron_left.svg) !important;
     background-repeat: no-repeat;
     background-size: cover;
     width: 32px !important;
@@ -103,7 +104,7 @@ ul {
 }
 
 .swiper-button-next {
-    background-image: url(img/chevron_right.png) !important;
+    background-image: url(img/chevron_right.svg) !important;
     background-repeat: no-repeat;
     background-size: cover;
     width: 32px !important;
@@ -119,9 +120,10 @@ textarea:focus, input:focus{
 
 .gradient_text {
     background: -webkit-linear-gradient(left, $lightBlue, $darkBlue);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-weight: bold !important;
+    border-radius: 10px;
 }
 
 .swiper-pagination-bullet-active {
@@ -147,3 +149,4 @@ input[type="checkbox"] {
 @import "minw375.scss";
 @import "minw768.scss";
 @import "minw1200.scss";
+@import "minw1400.scss";

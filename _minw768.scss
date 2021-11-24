@@ -18,7 +18,6 @@
             flex-direction: column;
             font-size: 32px;
             line-height: 40px;
-            
             &__name{
                 font-weight: 600;
                 font-size: 48px;
@@ -32,7 +31,6 @@
             line-height: 60px;
         }
     }
-
  
     .standart_text {
         font-size: 32px;
@@ -51,8 +49,7 @@
     }
 
     .logo {
-        padding-top: 35px;
-        padding-left: 46px;
+        padding-top: 19px;
     }
 
     .menu {
@@ -72,7 +69,7 @@
         }
        
         &_sidenav_btn {
-            margin-top: 35px;
+            margin-top: 19px;
             width: 222px;
             height: 50px;
             margin-right: 50px;
@@ -97,13 +94,14 @@
 
     #openNav {
         font-size: 42px;
-        margin-right: 46px;
         margin-top: 14px;
-        padding: 10px; 
+        width: 40px;
+        height: 30px;
+        border-radius: 0;
     }
 
     .sidenav .closebtn {
-        font-size: 50px;
+        padding: 0 calc(50% - 360px);
     }
 
     .about {
@@ -150,6 +148,16 @@
             font-size: 24px;
             line-height: 32px;
             width: 357px;
+            &::before {
+                position: absolute;
+                top: -11px;
+                left: 5px;
+            }
+            &::after {
+                position: absolute;
+                top: 37%;
+                right: -5px;
+            }
         }
     }
 
@@ -161,18 +169,43 @@
         font-size: 24px;
         line-height: 32px;
         &__ul {
+            align-items: center;
             gap: 80px;
-            &_after::after {
+            width: 100%;
+            &_after {
+                width: 100%;
+            &:nth-child(2) {
+                width: 494px;
+                &::after {
+                    left: 2%;
+                }
+            }
+            &:nth-child(3) {
+                width: 562px;
+                &::after {
+                    left: 8%;
+                }
+            }
+            &:nth-child(4) {
+                width: 539px;
+                &::after {
+                    left: 6%;
+                }
+            }
+            &::after {
                 content: url(img/wave_line_tablet.png);
+                display: flex;
+                align-items: center;
                 bottom: -51px;
                 left: 17%;
+                }
             }
         }
     }
 
     .help {
         min-height: 58vh;
-        font-size: 24px;
+        font-size: 23px;
         line-height: 32px;
         display: flex;
         flex-direction: column;
@@ -187,11 +220,24 @@
             flex-wrap: wrap;
             flex-direction: row;
             & li {
-                width: 316px;
-                padding-left: 20px;
+                width: 311px;
+                padding-left: 10px;
+                &:nth-child(even) {
+                    padding-left: 40px;
+                    &::after {
+                        left: -1px;
+                    }
+                }
                 &::after{
-                    left: -22px;
-                    content: url(img/check_box.svg);
+                    position: absolute;
+                    content: '';
+                    background: url(img/check_box_24px.svg);
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    width: 32px;
+                    height: 32px;
+                    left: -32px;
+                    top: 0;
                 }
             }
         }
@@ -211,7 +257,7 @@
         }
         &__ol {
             gap: 24px;
-            padding-left: 60px;
+            
             padding-bottom: 30px;
             & li::before {
                 width: 32px;
@@ -248,6 +294,20 @@
         }
     }
 
+    .mySwiperPrice {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 15px !important;
+        &__slide {
+            display: flex;
+            width: 340px !important;
+            height: 100%;
+            margin-right: 10px !important;
+            justify-content: flex-start !important;
+        }
+    }
+
     .review {
         min-height: 66vh;
         &__h2 {
@@ -263,10 +323,9 @@
             font-size: 20px;
             line-height: 24px;
             text-align: left;
-            padding-left: 150px;
-            padding-right: 80px;
-            width: 523px;
-            
+            padding-left: 103px;
+            padding-right: 43px;
+            height: 460px;
             &::before{
                 position: absolute;
                 content: '';
@@ -276,7 +335,7 @@
                 background-repeat: no-repeat;
                 width: 53px;
                 height: 42px;
-                left: 71px;
+                left: 40px;;
                 top: 3px;
             }
             &__name {
@@ -287,22 +346,6 @@
             }
         }
     }
-
-
-    .swiper {
-        width: 100%;
-        margin-left: auto;
-        margin-right: auto;
-        padding-bottom: 15px !important;
-      }
-
-    .swiper-slide {
-        width: 46vw !important;
-        height: 100%;
-        margin-right: 0 !important;
-        
-    }
-
     .education {
         min-height: 62vh;
         &__h2 {
@@ -311,13 +354,31 @@
             padding-bottom: 24px;
             padding-top: 48px;
         }
+        &__container {
+            justify-content: flex-start;
+            width: 100%;
+        }
         &__content {
             width: 334px;
             height: 478px;
         }
     }
 
+    .mySwiperEducation {
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 38px !important;
+        &__slide {
+            display: flex;
+            justify-content: center;
+            padding-bottom: 15px;
+            width: 335px !important;
+            margin-right: 30px;
+        }
+    }
+
     .form {
+        height: 135vh;
         background-position: 29% center;
         &__h2 {
             padding-top: 48px;
@@ -328,19 +389,17 @@
             width: 663px;
         }
         &__form {
-            width: 635px;
+            width: 100%;
         }
         &__control {
-            background: url(img/border_gradient_midi.png);
             padding-left: 16px;
             font-size: 24px;
             line-height: 32px;
-            width: 635px;
-            background-size: cover;
-            background-repeat: no-repeat;
+            width: 100%;
+            background: transparent;
         }
         &__btn {
-            width: 635px;
+            width: 100%;
             font-size: 24px;
         }
         &__checkbox {
@@ -348,11 +407,19 @@
             line-height: 32px;
             &__text {
                 width: 606px;
+                font-size: 24px;
+                line-height: 32px;
             }
             &__privasy {
-                font-size: 18px;
+                font-size: 22px;
                 top: 40px;
             }
+        }
+        &__inputs {
+            background: url(img/border_gradient_big.svg);
+            background-repeat: no-repeat;
+            background-size: 719px;
+            height: 57px;
         }
     }
 
@@ -372,8 +439,7 @@
             gap: 15px;
             justify-content: center;
             &__img {
-                width: 27px;
-                height: 22px;
+                height: 30px;
             }
         }
         &__socialmedia {
@@ -390,10 +456,12 @@
             font-size: 20px;
             line-height: 24px;
         }
+        &__up{
+        width: 32px;
+        }
     }
 
     #form__thanks {
-        
         width: 90vw;
         font-size: 32px;
         line-height: 40px;
@@ -410,7 +478,6 @@
     }
 
     .privacy {
-       
         font-size: 20px;
         &_closebtn {
             font-size: 32px;
@@ -429,6 +496,10 @@
             position: absolute;
         }
 
+    }
+
+    #button__tablet {
+        margin: 0;
     }
 
     .show_desctop {

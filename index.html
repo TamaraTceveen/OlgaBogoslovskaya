@@ -15,12 +15,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/4c151273f1.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
     <script src="script.js" defer></script>
-    <!-- <script src="https://code.jquery.com/jquery-3.5.0.js"></script> -->
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-
 
     <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
@@ -60,8 +57,8 @@
     <title>Консультация психолога. - Ольга Богословская</title>
 </head>
 
-<body class="extremal-scrolled">
-    <header class="header" id="top">
+<body class="extremal-scrolled site">
+    <header class="header center" id="top">
         <div class="header__nav">
             <div class="logo">
                 <img src="img/logo_name.svg" alt="богословская_психолог">
@@ -88,37 +85,9 @@
             </a>
             <nav class="menu">
                 <button id="openNav" class="menu__btn hide_desktop menu-off">
-                    <i class="fas fa-bars"></i>
+
                 </button>
-                <div id="mySidenav" class="sidenav">
-                    <ul id="myDropdown" class="menu__list">
-                        <li id="closeNav" class="closebtn">&times;</li>
 
-                        <li><a href="#me" id="meLink">Обо мне</a></li>
-                        <li><a href="#price">Услуги и цены</a></li>
-                        <li><a href="#review">Отзывы</a></li>
-                        <li><a href="#contact">Контакты</a></li>
-                        <li>+ 7 977 783 96 71</li>
-                        <li class="menu__mobil__mail">
-                            <img id="imgMail" src="img/mail_icon.svg" alt="bogoslovskaya_mail">
-                            olya.bogoslovskaya@gmail.com
-                        </li>
-                        <li>
-                            <a href="https://www.instagram.com/olga_bogoslovskaya__/" target="_blank">
-                                <img class="menu__socialmedia" src="img/instagram.svg" alt="богословская_инстаграм">
-                            </a>
-                            <a href="https://www.facebook.com/olga.kot" target="_blank">
-                                <img class="menu__socialmedia" src="img/facebook.svg" alt="богословская_фэйсбук">
-                            </a>
-                        </li>
-                        <li class="hide_mobil">
-                            <a href="#apply" class="menu_sidenav_btn">
-                                Связаться
-                            </a>
-                        </li>
-
-                    </ul>
-                </div>
                 <p class="hide_nomobil mobil_text hide_tablet">+ 7 977 783 96 71</p>
             </nav>
         </div>
@@ -133,7 +102,35 @@
             <a href="#apply" class="header__btn">Записаться на консультацию</a>
         </div>
     </header>
+    <div id="mySidenav" class="sidenav">
+        <ul id="myDropdown" class="menu__list">
+            <li id="closeNav" class="closebtn">&times;</li>
 
+            <li><a href="#me" id="meLink">Обо мне</a></li>
+            <li><a href="#price">Услуги и цены</a></li>
+            <li><a href="#review">Отзывы</a></li>
+            <li><a href="#contact">Контакты</a></li>
+            <li>+ 7 977 783 96 71</li>
+            <li class="menu__mobil__mail">
+                <img id="imgMail" src="img/mail_icon.svg" alt="bogoslovskaya_mail">
+                olya.bogoslovskaya@gmail.com
+            </li>
+            <li>
+                <a href="https://www.instagram.com/olga_bogoslovskaya__/" target="_blank">
+                    <img class="menu__socialmedia" src="img/instagram.svg" alt="богословская_инстаграм">
+                </a>
+                <a href="https://www.facebook.com/olga.kot" target="_blank">
+                    <img class="menu__socialmedia" src="img/facebook.svg" alt="богословская_фэйсбук">
+                </a>
+            </li>
+            <li class="hide_desctop">
+                <a href="#apply" class="menu_sidenav_btn" id="button__tablet">
+                    Связаться
+                </a>
+            </li>
+
+        </ul>
+    </div>
     <section class="about center">
         <h1 class="about__h1" id="me">
             Давайте знакомиться
@@ -181,18 +178,22 @@
 
 
         </div>
+
     </section>
+    <a href="#top" class="site__block__up center">
+        <img class="footer__up" src="img/chevron_up.svg" alt="up">
+    </a>
     <section class="important center">
         <ul class="important__ul">
             <li class="important__ul_after">Индивидуальный подход к каждому клиенту</li>
-            <li class="important__ul_after">Действительно понимаю своих клиентов, а не просто киваю головой </li>
+            <li class="important__ul_after">Действительно понимаю своих клиентов, а не просто киваю головой</li>
             <li class="important__ul_after">Работаю с научно обоснованными методами психотерапии, эффективность которых
                 подтверждена на практике
             </li>
             <li class="important__ul_after">Получаю удовольствие от своей работы. Лучшая награда для меня – это, когда я
                 вижу ваши первые успехи,
                 любые качественные улучшения в вашей жизни, и ваша улыбка :)</li>
-            <li>Для меня очень важен терапевтический альянс. Я хочу, чтобы вы знали – я никого не осуждаю, работаю на
+            <li class="important__ul_after">Для меня очень важен терапевтический альянс. Я хочу, чтобы вы знали – я никого не осуждаю, работаю на
                 полном принятии и мне вы можете доверять. Я всегда буду на вашей стороне. «Химия» между терапевтом и
                 клиентом – основной залог успеха терапии</li>
         </ul>
@@ -230,11 +231,11 @@
                 могли решать проблемы самостоятельно </li>
         </ol>
     </section>
-    <section class="price" id="price">
+    <section class="price center" id="price">
         <h2 class="price__h2">Услуги и цены</h2>
         <div class="swiper mySwiperPrice">
             <div class="swiper-wrapper">
-                <div class="swiper-slide">
+                <div class="swiper-slide mySwiperPrice__slide">
                     <div class="price__content " id="priceFirstSlide">
                         <div class="price__content__slide">
                             <div>
@@ -262,7 +263,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="swiper-slide">
+                <div class="swiper-slide mySwiperPrice__slide">
                     <div class="price__content" id="priceSecondSlide">
                         <div class="price__content__slide">
                             <div>
@@ -280,7 +281,7 @@
                     </div>
                 </div>
 
-                <div class="swiper-slide">
+                <div class="swiper-slide mySwiperPrice__slide">
                     <div class="price__content" id="priceThirdSlide">
                         <div class="price__content__slide">
                             <div>
@@ -307,22 +308,22 @@
             </div>
 
             <div class="swiper-pagination swiper-pagination-white hide_mobil"></div>
-            <div class="swiper-button-next hide_mobil hide_minimobil"></div>
-            <div class="swiper-button-prev hide_mobil hide_minimobil"></div>
+            <div class="swiper-button-next hide_mobil hide_minimobil swiper_right"></div>
+            <div class="swiper-button-prev hide_mobil hide_minimobil swiper_left"></div>
         </div>
     </section>
     <section class="education center">
         <h2 class="education__h2">Мое образование</h2>
         <div class="swiper mySwiperEducation">
             <div class="swiper-wrapper">
-                <div class="swiper-slide">
+                <div class="swiper-slide mySwiperEducation__slide">
                     <div class="education__container">
-                        <img class="education__content" src="img/diplom1.png" alt="дипломированный_психолог">
+                        <img class="education__content" id="diplom1" src="img/diplom1.jpg" alt="дипломированный_психолог">
                     </div>
                 </div>
-                <div class="swiper-slide">
-                    <div>
-                        <img class="education__content" src="img/diplom2.png" alt="дипломированный_психолог">
+                <div class="swiper-slide mySwiperEducation__slide">
+                    <div class="education__container">
+                        <img class="education__content" id="diplom2" src="img/diplom2.jpg" alt="дипломированный_психолог">
                     </div>
                 </div>
             </div>
@@ -335,7 +336,7 @@
         </h2>
         <div class="swiper mySwiperReview">
             <div class="swiper-wrapper review__swiper">
-                <div class="swiper-slide">
+                <div class="swiper-slide mySwiperReview__slide">
                     <div class="review__content">
                         <p data-swiper-parallax="-100">Я пришла к Ольге в состоянии отчаяния. Врач поставил мне диагноз
                             генерализованное тревожное расстройство. Из-за своей сильнейшей тревоги я не могла спать по
@@ -349,7 +350,7 @@
                         <p class="review__content__name" data-swiper-parallax="-250">Александра, 34 года</p>
                     </div>
                 </div>
-                <div class="swiper-slide">
+                <div class="swiper-slide mySwiperReview__slide">
                     <div class="review__content">
                         <p data-swiper-parallax="-100">Оля – это просто находка. До этого ходила к нескольким
                             психологам, и только с Олей смогла раскрыться и довериться ей по настоящему. С нетерпением
@@ -362,7 +363,7 @@
                         <p class="review__content__name" data-swiper-parallax="-250">Ксения, 38 лет</p>
                     </div>
                 </div>
-                <div class="swiper-slide">
+                <div class="swiper-slide mySwiperReview__slide">
                     <div class="review__content">
                         <p data-swiper-parallax="-100">Оля не первый мой психолог, но первый, с кем я в длительной
                             постоянной терапии.
@@ -387,8 +388,9 @@
             Для записи на консультацию заполните, пожалуйста, форму
         </h2>
         <form action="javascript:send()" method="POST" name="main" class="form__form" id="apply">
-
-            <input type="text" class="form__control" id="user_name" name="user_name" placeholder="Имя">
+            <div class="form__inputs">
+                <input type="text" class="form__control" id="user_name" name="user_name" placeholder="Имя">
+            </div>
             <div class="form__inputs">
                 <input type="tel" class="form__control" id="user_phone" name="user_phone" placeholder="Телефон">
             </div>
@@ -432,9 +434,6 @@
                         <img class="footer__socialmedia__links" src="img/facebook.svg" alt="богословская_фэйсбук">
                     </a>
                 </div>
-                <a href="#top" class="footer__block__up">
-                    <img class="footer__up" src="img/chevron_up.png" alt="up">
-                </a>
             </div>
             <a class="footer__personaldata" href="tech/privacy.html">
                 Политика обработки персональных данных
@@ -442,6 +441,7 @@
         </footer>
 
     </section>
+
 </body>
 
 </html>

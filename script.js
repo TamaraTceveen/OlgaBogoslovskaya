@@ -189,7 +189,7 @@ breakpointChecker();
 
 function openNav() {
     document.getElementById("mySidenav").style.right = "0";
-    document.getElementById("mySidenav").style.width = "100vw";
+    document.getElementById("mySidenav").style.width = "103vw";
 }
 
 function closeNav() {
