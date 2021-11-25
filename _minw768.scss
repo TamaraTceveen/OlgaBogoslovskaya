@@ -72,7 +72,7 @@
             margin-top: 19px;
             width: 222px;
             height: 50px;
-            margin-right: 50px;
+            margin-right: 131px;
             
         }
         &__mobil__mail {
@@ -163,7 +163,6 @@
 
     .important {
         min-height: 56vh;
-        
         padding-top: 66px;
         padding-bottom: 66px;
         font-size: 24px;
@@ -192,6 +191,7 @@
                     left: 6%;
                 }
             }
+          
             &::after {
                 content: url(img/wave_line_tablet.png);
                 display: flex;
@@ -219,6 +219,7 @@
             max-height: 100%;
             flex-wrap: wrap;
             flex-direction: row;
+            overflow: visible !important;
             & li {
                 width: 311px;
                 padding-left: 10px;
@@ -244,7 +245,6 @@
     }
 
     .work {
-        min-height: 70vh;
         font-size: 20px;
         line-height: 24px;
         background-position: 52% center;
@@ -267,7 +267,6 @@
     }
 
     .price {
-        min-height: 60vh;
         margin-top: 0;
         &__h2 {
             font-size: 48px;
@@ -309,23 +308,22 @@
     }
 
     .review {
-        min-height: 66vh;
         &__h2 {
             font-size: 48px;
             line-height: 56px;
-            padding-top: 70px;
         }
         &__swiper > div {
             width: 100% !important;
         }
         &__content {
-            padding-top: 40px;
             font-size: 20px;
             line-height: 24px;
             text-align: left;
-            padding-left: 103px;
-            padding-right: 43px;
-            height: 460px;
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            grid-template-rows: [text] auto [last-line];
+            grid-template-areas: 
+                ". review-text review-text review-text review-text .";
             &::before{
                 position: absolute;
                 content: '';
@@ -338,6 +336,9 @@
                 left: 40px;;
                 top: 3px;
             }
+            &__text {
+                grid-area: review-text;
+            }
             &__name {
                 font-size: 24px;
                 line-height: 28px;
@@ -347,7 +348,6 @@
         }
     }
     .education {
-        min-height: 62vh;
         &__h2 {
             font-size: 48px;
             line-height: 56px;
@@ -367,18 +367,17 @@
     .mySwiperEducation {
         margin-left: auto;
         margin-right: auto;
-        padding-bottom: 38px !important;
-        &__slide {
+        & > div {
             display: flex;
             justify-content: center;
-            padding-bottom: 15px;
+        }
+        &__slide {
             width: 335px !important;
             margin-right: 30px;
         }
     }
 
     .form {
-        height: 135vh;
         background-position: 29% center;
         &__h2 {
             padding-top: 48px;
@@ -528,5 +527,38 @@
 
     .hide_desctop {
         display: block;
+    }
+}
+@media (min-width: 1000px){
+    .center {
+        padding: 0 calc(50% - 453px);
+    }
+
+    .review__content {
+        margin-bottom: 50px;
+    }
+
+    .help {
+        &__h2 {
+            width: 800px;
+            margin-top: 50px;
+        }
+        &__list {
+            display: grid;
+            grid-template-columns: [left] 50% [right] 50% [end];
+            grid-template-rows: [one] 50px [two] 50px [three] 50px [four] 80px [five] 90px [six] 150px [last-line];
+        }
+    }
+
+    .form__inputs {
+        background-size: 100%;
+        height: 75px;
+        background-position-y: center;
+        display: flex;
+        align-items: center;
+    }
+
+    .sidenav .closebtn {
+        padding: 0 calc(50% - 453px);
     }
 }

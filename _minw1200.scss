@@ -2,11 +2,116 @@
     .center {
         padding: 0 calc(50% - 45vw);
     }
+
+    .header {
+        height: 700px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 19%;
+        &__nav {
+            position: relative;
+            height: 14vh;
+        }
+        &__text {
+            text-align: left;
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+            margin-top: 0;
+            &__name{
+                font-weight: 600;
+                font-size: 56px;
+                line-height: 72px;
+            }
+        }
+        &__btn {
+         text-align: center;
+        }
+    }
+
+    .logo img {
+        padding-right: 12px;
+    }
+
+    .standart_text {
+        font-size: 34px;
+        width: 879px;
+        text-align: left;
+        margin-top: 40px;
+    }
+
+    .mobil_text {
+        color: #FAF6F6;
+        display: flex;
+        height: 47px;
+        font-weight: 700;
+        align-items: center;
+        font-size: 27px;
+        margin-left: 800px;
+    }
+
+    .menu {
+        height: 30px;
+        background-position-y: bottom;
+        padding-top: 84px;
+        box-sizing: border-box;
+        
+        &__btn {
+            width: 90%;
+            max-width: 222px;
+            height: 50px;
+            background: url("img/border_gradient.svg");
+            border-radius: 10px;
+            font-size: 24px;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        &__desctop {
+            display: flex !important;
+            flex-direction: row;
+            gap: 3%;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 24px;
+            align-items: center;
+            height: 95px;
+            justify-content: end;
+            &__hover{
+                position: relative;
+                background-clip: text;
+                &:hover {
+                    background-image: linear-gradient(91.66deg, $lightBlue 0.05%, $darkBlue 99.94%);
+                    background-size: 100%;
+                    background-repeat: repeat;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent; 
+                }
+            }
+            
+            &__nav {
+                width: 100%;
+            }
+            
+            &__phone {
+                margin-left: calc(50% - 490px);
+            }
+            &__button:hover {
+                background: linear-gradient(91.59deg, $lightBlue 0%, $darkBlue 100%);
+                border-radius: 10px;
+                color: $black;
+}
+        }
+        &_sidenav_btn {
+            margin: 0;
+        }
+    }
+
     .about {
         min-height: 850px;
         &__h1 {
             font-weight: 600;
-            font-size: 60px;
+            font-size: 52px;
             line-height: 72px;
             width: 693px;
             padding-bottom: 60px;
@@ -67,7 +172,11 @@
         
     }
     .important {
+        margin-top: 50px;
         &__ul{
+            &_after:first-child::after{
+                left: 311px;
+            }
             &_after:last-child{
                 width: 959px;
                     &::after {
@@ -77,12 +186,20 @@
         }
     }
     .help {
-        margin-top: 50px;
+        margin-top: 30px;
+        &__h2 {
+            width: 1000px;
+            font-size: 52px;
+            padding-bottom: 30px;
+        }
         &__list {
-            width: 900px;
-            padding-left: 76px;
+            display: grid;
+            grid-template-columns: [left] 50% [right] 50% [end];
+            grid-template-rows: [one] 50px [two] 50px [three] 50px [four] 80px [five] 90px [six] 150px [last-line];
             & li{
                 padding-bottom: 5px;
+                width: 64%;
+                justify-self: center;
                 &:nth-child(even)::after {
                     left: -11px;
                 }
@@ -92,15 +209,24 @@
                 width: 40px;
                 height: 40px;
             }
-            & li:nth-child(odd) {
-                padding-right: 200px;
-            }
         }
     }
 
-    .work__ol li::before {
-        width: 35px;
-        height: 35px;
+    .work {
+        
+        background-size: cover;
+    }
+    .work__ol {
+        gap: 35px;
+        padding-bottom: 40px;
+        
+    }
+    .work__ol li{
+        padding-left: 56px;
+        &::before {
+            width: 35px;
+            height: 35px;
+        }
     }
 
     .mySwiperPrice {
@@ -116,8 +242,104 @@
         }
     }
 
+    .price__content__conteiner {
+        color: transparent;
+    }
+
+    #priceFirstSlide {
+        background: transparent;
+        background-size: cover;
+        position: relative;
+        box-shadow: 8px 8px 7px rgba(0, 0, 0, 0.1);
+        position: absolute;
+        top: 0;
+        left: -15;
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background: url(img/price_desctop1.png);
+            background-size: cover;
+            z-index: -1;
+        }
+        &:hover::before {
+            content: '';
+            filter: blur(5px);
+            transition: all 0.4s ease-out;
+            box-shadow: 8px 8px 7px rgba(0, 0, 0, 0.2);
+        }
+        &:hover .price__content__conteiner {
+            transition: all 0.4s ease-out;
+            color: $black;
+        }
+    }
+
+    #priceSecondSlide {
+        background: transparent;
+        background-size: cover;
+        position: relative;
+        box-shadow: 8px 8px 7px rgba(0, 0, 0, 0.1);
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background: url(img/price_desctop2.png);
+            background-size: cover;
+            z-index: -1;
+        }
+        &:hover::before {
+            content: '';
+            filter: blur(5px);
+            transition: all 0.4s ease-out;
+            box-shadow: 8px 8px 7px 1px rgba(0, 0, 0, 0.2);
+        }
+        &:hover .price__content__conteiner {
+            transition: all 0.4s ease-out;
+            color: $black;
+        }
+        &:hover {
+            box-shadow: 8px 8px 7px 1px rgba(0, 0, 0, 0.2);
+        }
+    }
+
+    #priceThirdSlide {
+        background: transparent;
+        background-size: cover;
+        position: relative;
+        box-shadow: 8px 8px 7px rgba(0, 0, 0, 0.1);
+        top: 0;
+        z-index: 3;
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background: url(img/price_desctop3.png);
+            background-size: cover;
+            z-index: -1;
+            border-radius: 10px;
+}
+        &:hover::before {
+            content: '';
+            filter: blur(5px);
+            transition: all 0.4s ease-out;
+            box-shadow: 8px 8px 7px rgba(0, 0, 0, 0.2);
+            -webkit-filter: blur(5px);
+}
+        &:hover .price__content__conteiner {
+            transition: all 0.4s ease-out;
+            color: $black;
+        }
+    }
     .education {
-        min-height: 550px !important;
         &__h2 {
             font-size: 60px;
             line-height: 72px;
@@ -125,69 +347,55 @@
             padding-top: 80px;
         }
         &__content {
-            height: 550px;
+            height: 100%;
             margin-right: 30px;
         }
         &__container {
-            width: 525px;
+            width: 524px;
             position: relative;
+            display: block;
         }
     }
     #diplom1 {
-        position: absolute;
-        top: 0;
-        left: 5px;
-        width: 524px;
-        height: 750px;
+        width: 100%;
     }
 
     #diplom2 {
-        position: absolute;
-        top: 0;
-        right: -427px;
-        width: 524px;
-        height: 750px;
+        width: 100%;
     }
 
     .mySwiperEducation {
         margin-left: auto;
         margin-right: auto;
         padding-bottom: 38px !important;
-        height: 750px;
         max-width: 1600px;
+        & > div {
+            display: flex;
+            justify-content: center;
+        }
         &__slide {
             display: flex;
             justify-content: center;
             padding-bottom: 15px;
-            width: 335px !important;
             margin-right: 30px;
+            width: 40% !important;
         }
     }
 
     .review {
-        min-height: 700px;
-        // &__swiper > div {
-        //     width: 100% !important;
-        // }
         &__content {
             padding-top: 60px;
             font-size: 24px;
             line-height: 32px;
             text-align: left;
-            padding-left: 20%;
-            padding-right: 255px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            width: 865px;
+            width: 100%;
             &::before {
-                left: 153px;
+                left: 89px;
             }
         }
     }
 
     .mySwiperReview {
-        height: 556px !important;
         padding-bottom: 30px;
     }
     .form {
@@ -226,6 +434,7 @@
         justify-content: space-between;
         
         &__name {
+            padding-top: 0;
             font-size: 40px;
             line-height: 48px;
             width: 390px;
@@ -285,5 +494,20 @@
     }
     .footer__up {
         width: 50px;
+    }
+    .sidenav .closebtn {
+        padding: 0 calc(50% - 45vw);
+    }
+
+    .hide_desktop {
+        display: none;
+    }
+
+    .show_desctop {
+        display: inline !important;
+    }
+
+    .show_tablet {
+        display: none;
     }
 }

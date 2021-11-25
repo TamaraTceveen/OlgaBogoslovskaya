@@ -240,6 +240,9 @@
                     bottom: -33px;
                     left: 0;
                 }
+                &:last-child::after {
+                    content: '';
+                }
             }
         }
     }
@@ -271,6 +274,7 @@
             gap: 16px;
             padding-left: 32px;
             margin-bottom: 10px;
+            
             & li{
                 position: relative;
                 &::after {
@@ -289,7 +293,6 @@
     }
 
     .work {
-        min-height: 70vh;
         background-image: url(img/bg_ocean_light.png);
         background-repeat: no-repeat;
         background-size: cover;
@@ -345,7 +348,6 @@
         line-height: 20px;
         text-align: center;
         color: $black;
-        min-height: 70vh;
         margin-top: 10px;
         &__h2 {
             font-weight: 600;
@@ -368,7 +370,6 @@
             padding-bottom: 16px;
         }
         &__content {
-            
             box-sizing: border-box;
             border-radius: 10px;
             box-shadow: 12px 12px 7px rgba(0,0,0,0.2);
@@ -386,7 +387,6 @@
     }
 
     .education {
-        min-height: 80vh;
         &__h2 {
             font-size: 32px;
             line-height: 40px;
@@ -395,11 +395,12 @@
             text-align: center;
         }
         &__container {
-            display: flex;
-        justify-content: center;
+            width: 89%;
         }
         &__content {
-            height: 418px;
+            height: 385px;
+            border-radius: 10px;
+            box-shadow: 12px 12px 7px rgba(0,0,0,0.2);
         }
     }
 
@@ -407,6 +408,9 @@
         margin-left: auto;
         margin-right: auto;
         padding-bottom: 38px !important;
+        & > div {
+            padding-right: 30px;
+        }
         &__slide {
             display: flex;
             justify-content: center;
@@ -422,15 +426,8 @@
             display: flex;
             justify-content: center;
             padding-bottom: 15px;
+            width: 95% !important;
         }
-    }
-    .swiper-slide .title {
-        font-style: normal;
-        font-weight: bold;
-        font-size: 24px;
-        line-height: 30px;
-        padding-top: 24px;
-        padding-bottom: 16px;
     }
 
     .swiper_left {
@@ -456,7 +453,6 @@
     }
 
     .review {
-        min-height: 80vh;
         color: $black;
         &__h2 {
             font-weight: 600;
@@ -474,7 +470,7 @@
             padding-left: 36px;
             padding-right: 36px;
             position: relative;
-            height: 755px;
+            margin-bottom: 30px;
             &::before{
                 position: absolute;
                 content: '';
@@ -491,7 +487,9 @@
                 font-weight: 600;
                 font-size: 20px;
                 line-height: 24px;
-                margin-top: 16px;
+                padding-top: 16px;
+                display: inline-block;
+                margin-bottom: 10px;
             }
         }
     }
@@ -512,7 +510,6 @@
     }
 
     .form {
-        height: 148vh;
         background: url(img/bg_form.jpg);
         background-position: 53% center;
         background-repeat: no-repeat;
@@ -601,7 +598,6 @@
             font-size: 13px;
         }
        }
-       
     }
 
     #form__thanks {
@@ -721,7 +717,6 @@
         border-width: 0 3px 3px 0;
         transform: scale(1);
         transform: rotate(45deg);
-        
     }
 
     .privacy {
